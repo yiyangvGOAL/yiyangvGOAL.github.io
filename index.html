@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yi Yang — Formal Methods &amp; Automated Reasoning</title>
+  <meta name="description" content="Yi Yang — researcher in formal methods and automated reasoning at KU Leuven. Model checking, theorem proving, and verifiably safe autonomous decision-making (vGOAL)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress-bar" aria-hidden="true"></div>
+  <div class="bg-ornament" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="nav-brand"><span class="brand-mark">Y</span>i Yang</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" data-spy>About</a></li>
+        <li><a href="#research" data-spy>Research</a></li>
+        <li><a href="#skills" data-spy>Skills</a></li>
+        <li><a href="#publications" data-spy>Publications</a></li>
+        <li><a href="#activities" data-spy>Service</a></li>
+        <li><a href="#contact" data-spy>Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></svg>
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section id="about" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text reveal">
+          <p class="hero-kicker mono">// formal methods · automated reasoning · autonomous systems</p>
+          <h1 class="hero-name">Yi&nbsp;Yang</h1>
+          <p class="hero-role">Research Fellow, DistriNet<br /><a href="https://www.kuleuven.be" target="_blank" rel="noopener">KU&nbsp;Leuven</a>, Belgium</p>
+          <p class="hero-bio">
+            I build languages and tooling that make autonomous systems <em>provably</em>
+            correct, combining <strong>model checking</strong>, <strong>interactive theorem
+            proving</strong>, and <strong>programming-language semantics</strong>. My work
+            centres on <strong>vGOAL</strong> — an agent programming language for verifiably
+            safe autonomous decision-making.
+          </p>
+          <div class="hero-formula mono" aria-hidden="true">
+            <span class="f-dim">⊨</span> AG(<span class="f-accent">decide</span> → AF <span class="f-accent">safe</span>)&nbsp;&nbsp;·&nbsp;&nbsp;P<sub>≥p</sub>[ ◇ <span class="f-accent">goal</span> ]
+          </div>
+          <div class="hero-links">
+            <a href="mailto:yi.yang@kuleuven.be" class="btn btn-solid">Email me</a>
+            <a href="cv.pdf" class="btn">Curriculum Vitae</a>
+            <div class="hero-socials">
+              <a href="https://github.com/yiyangvGOAL" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.2 4.7 18.2 5 18.2 5c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.5 5.6 18.4.5 12 .5Z"/></svg>
+              </a>
+              <a href="https://orcid.org/0000-0001-9565-1559" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID 0000-0001-9565-1559">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24ZM7.4 5.9a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8Zm-.7 3h1.4v8.7H6.7V8.9Zm3.4 0h3.8c3.6 0 5.2 2.6 5.2 4.4 0 2.2-1.8 4.4-5.2 4.4h-3.8V8.9Zm1.4 1.3v6.2h2.3c3.2 0 3.9-2.4 3.9-3.1 0-1.7-1.1-3.1-4-3.1h-2.2Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <figure class="hero-photo reveal reveal-delay-1">
+          <div class="photo-frame">
+            <!-- Replace photo.jpg with your photo -->
+            <img src="photo.jpg" alt="Yi Yang"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22480%22 height=%22600%22&gt;&lt;rect width=%22480%22 height=%22600%22 fill=%22%23ded9d0%22/&gt;&lt;text x=%2250%25%22 y=%2250%25%22 font-size=%2226%22 fill=%22%23968f83%22 text-anchor=%22middle%22 font-family=%22Georgia%22&gt;photo.jpg&lt;/text&gt;&lt;/svg&gt;';" />
+          </div>
+        </figure>
+      </div>
+      <div class="hero-scroll mono" aria-hidden="true">scroll<span class="scroll-line"></span></div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section">
+      <header class="section-head reveal">
+        <span class="section-index mono">01</span>
+        <h2>Research</h2>
+        <p class="section-sub">Agent programming languages · formal verification · safe autonomous decision-making.</p>
+      </header>
+      <div class="research-prose reveal">
+        <p class="rp-lead">I specialize in <strong>agent programming languages</strong>, <strong>formal verification</strong>, and <strong>safe autonomous decision-making</strong> — designing logic-based frameworks with formally defined syntax and semantics that let autonomous systems specify and enforce machine-readable safety constraints.</p>
+        <p>My path into formal methods began with <strong>interactive theorem proving</strong>. During my MSc at RWTH Aachen, I extended <em>MontiBelle</em>, an Isabelle/HOL &amp; HOLCF framework for distributed cyber-physical systems, defining new continuous stream operators and proving around 80 lemmas to enable the verification of stateful automata.</p>
+        <p>During my PhD at KU Leuven, I developed <strong>vGOAL</strong>, an agent programming language and framework that integrates runtime safety enforcement with automated verification pipelines based on <strong>CTL and PCTL model checking</strong>. This work supports verifiably safe multi-agent systems and has been validated on real-world robotic platforms.</p>
+        <p>My current research extends these foundations toward <strong>trustworthy and responsible AI</strong>, including LLM-supported decision-making under normative constraints. I am particularly interested in bridging formal methods with practical AI systems to ensure safety, reliability, and human-centered behavior in autonomous and interactive environments.</p>
+      </div>
+
+      <div class="artifacts reveal">
+        <h3 class="artifacts-title">Software &amp; demonstrations</h3>
+        <ul class="artifacts-list">
+          <li><a href="https://github.com/yiyangvGOAL/vGOAL" target="_blank" rel="noopener">vGOAL interpreter</a> <span class="art-note">— runtime with active safety enforcement</span></li>
+          <li><a href="https://github.com/yiyangvGOAL/Model-Checking-of-vGOAL" target="_blank" rel="noopener">Verification suite</a> <span class="art-note">— CTL / PCTL model checking</span></li>
+          <li><a href="https://youtu.be/Y434fipey30" target="_blank" rel="noopener">Physical deployment demo</a> <span class="art-note">· <a href="https://youtu.be/nuFRnyi5Owg" target="_blank" rel="noopener">verification workflow</a></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <header class="section-head reveal">
+        <span class="section-index mono">02</span>
+        <h2>Technical Skills</h2>
+      </header>
+      <div class="skills-grid">
+        <div class="skill-cat reveal">
+          <h3>Automated Reasoning</h3>
+          <div class="chip-row">
+            <span class="chip">CTL / PCTL / LTL model checking</span>
+            <span class="chip">SAT / SMT solving</span>
+            <span class="chip">deductive verification</span>
+            <span class="chip">abstraction &amp; refinement</span>
+            <span class="chip">equivalence checking</span>
+            <span class="chip">counterexample-guided analysis</span>
+            <span class="chip">verification pipelines</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal reveal-delay-1">
+          <h3>Theorem Proving</h3>
+          <div class="chip-row">
+            <span class="chip">Isabelle/HOL</span>
+            <span class="chip">HOLCF (domain theory)</span>
+            <span class="chip">inductive proofs</span>
+            <span class="chip">least fixpoints</span>
+            <span class="chip">proof decomposition &amp; optimization</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal">
+          <h3>Programming Languages &amp; Semantics</h3>
+          <div class="chip-row">
+            <span class="chip">operational semantics</span>
+            <span class="chip">denotational semantics</span>
+            <span class="chip">axiomatic semantics</span>
+            <span class="chip">formal syntax design</span>
+            <span class="chip">parsing</span>
+            <span class="chip">interpreter implementation</span>
+            <span class="chip">bisimulation proofs</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal reveal-delay-1">
+          <h3>Programming &amp; Tools</h3>
+          <div class="chip-row">
+            <span class="chip chip-strong">Python</span>
+            <span class="chip chip-strong">C++</span>
+            <span class="chip chip-strong">Java</span>
+            <span class="chip">algorithms &amp; data structures</span>
+            <span class="chip">NuSMV</span>
+            <span class="chip">Storm</span>
+            <span class="chip">Isabelle</span>
+            <span class="chip">PySAT</span>
+            <span class="chip">ROS</span>
+            <span class="chip">Git</span>
+            <span class="chip">Unix</span>
+            <span class="chip">LaTeX</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal">
+          <h3>Languages</h3>
+          <div class="chip-row">
+            <span class="chip">Chinese (native)</span>
+            <span class="chip">English (C2)</span>
+            <span class="chip">German (C1)</span>
+            <span class="chip">Dutch (B1)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+      <header class="section-head reveal">
+        <span class="section-index mono">03</span>
+        <h2>Publications</h2>
+        <p class="section-sub">Also listed on <a href="https://orcid.org/0000-0001-9565-1559" target="_blank" rel="noopener">ORCID</a>.</p>
+      </header>
+
+      <h3 class="pub-group reveal">PhD thesis</h3>
+      <ol class="pub-list">
+        <li class="pub reveal">
+          <span class="pub-year mono">2025</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Verifiably Safe Autonomous Decision-Making</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong> · supervisors: Tom Holvoet, Jeroen Boydens</p>
+            <p class="pub-venue">PhD thesis, Doctor of Engineering Science, KU Leuven, 11 June 2025</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="pub-group reveal">Journal articles</h3>
+      <ol class="pub-list">
+        <li class="pub reveal">
+          <span class="pub-year mono">2025</span>
+          <div class="pub-body">
+            <h4 class="pub-title">A Roadmap for Responsible Robotics: Promoting Human Agency and Collaborative Efforts</h4>
+            <p class="pub-authors">Sarah Moth-Lund Christensen, Simon Coghlan, Emily Collins, S. Kate Conroy, Alcino Cunha, Anna Dobrosovestnova, Hein Duijf, Vanessa Evers, Michael Fisher, Nico Hochgeschwender, Nadin Kökciyan, Séverin Lemaignan, Francisco Rodriguez-Lera, Sara Ljungblad, Martin Magnusson, Masoumeh Mansouri, Michael Milford, AJung Moon, Thomas M. Powers, Pericle Salvini, Teresa Scantamburlo, Nick Schuster, Marija Slavkovik, Ufuk Topcu, Daniel Vanegas, Andrzej Wąsowski, <strong>Yi Yang</strong></p>
+            <p class="pub-venue">IEEE Robotics &amp; Automation Magazine · <a href="https://doi.org/10.1109/MRA.2025.3620148" target="_blank" rel="noopener">doi:10.1109/MRA.2025.3620148</a></p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2023</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Making Model Checking Feasible for GOAL</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">Annals of Mathematics and Artificial Intelligence, Springer</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="pub-group reveal">Conference papers</h3>
+      <ol class="pub-list">
+        <li class="pub reveal">
+          <span class="pub-year mono">2026</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Responsible Humanoids: A Contradiction in Terms?</h4>
+            <p class="pub-authors">Séverin Lemaignan, AJung Moon, Simon Coghlan, Emily C. Collins, Vanessa Evers, Michael Fisher, Nico Hochgeschwender, Sara Ljungblad, Michael Milford, Sarah Moth-Lund Christensen, Francisco J. Rodriguez Lera, Pericle Salvini, Teresa Scantamburlo, <strong>Yi Yang</strong></p>
+            <p class="pub-venue">HRI 2026, Edinburgh, UK · <em>accepted, to appear</em></p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2025</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Efficient Model Checking with Semantically-Equivalent Models for vGOAL</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">AAMAS 2025, Detroit, USA</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2025</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Bridging the Semantic Gap in vGOAL for Verifiable Autonomous Decision-Making</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">ICAART 2025, Porto, Portugal</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2024</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Added Value of Probabilistic Model Checking of vGOAL for Autonomous Systems</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">PRIMA 2024, Kyoto, Japan</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2024</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Developing a Safe Autonomous Logistic System with vGOAL</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">PAAMS 2024, Salamanca, Spain</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2023</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Safe Autonomous Decision-Making with vGOAL</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">PAAMS 2023, Guimarães, Portugal</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2023</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Verifiably Safe Decision-Making for Autonomous Systems</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong></p>
+            <p class="pub-venue">AAMAS 2023 (Doctoral Consortium), London, UK</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="pub-group reveal">Workshop papers</h3>
+      <ol class="pub-list">
+        <li class="pub reveal">
+          <span class="pub-year mono">2025</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Engineering the Next Generation of Multi-Agent Systems: A Community Roadmap from EMAS 2025</h4>
+            <p class="pub-authors">Sebastian Rodriguez, Akhila Bairy, Matteo Baldoni, Patrick Benjamin, Constantin Blessing, Nicolas Brandstetter, Amit K. Chopra, Thomas Clemen, Louise A. Dennis, Ahmad Esmaeili, Lu Feng, Angelo Ferrando, Zahra Ghorrati, Victor Guillet, Önder Gürcan, Soham Hans, James Herber, Viviana Mascardi, Marcel Mauri, Jörg P. Müller, John Thangarajah, Rafał Tyl, <strong>Yi Yang</strong></p>
+            <p class="pub-venue">EMAS 2025, Springer LNCS, pp. 238–258</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2024</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Enhancing Confidence of the vGOAL Interpreter Using SAT Solving</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">EMAS 2024, Auckland, New Zealand</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2023</span>
+          <div class="pub-body">
+            <h4 class="pub-title">vGOAL: A GOAL-based Specification Language for Safe Autonomous Decision-Making</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">EMAS 2023, London, UK</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub-year mono">2022</span>
+          <div class="pub-body">
+            <h4 class="pub-title">Generating Safe Autonomous Decision-Making in ROS</h4>
+            <p class="pub-authors"><strong>Yi Yang</strong>, Tom Holvoet</p>
+            <p class="pub-venue">FMAS 2022, Berlin, Germany</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ ACTIVITIES & SERVICE ============ -->
+    <section id="activities" class="section">
+      <header class="section-head reveal">
+        <span class="section-index mono">04</span>
+        <h2>Activities &amp; Service</h2>
+      </header>
+
+      <ul class="timeline">
+        <li class="timeline-item reveal">
+          <time class="mono">Jun 2024</time>
+          <div>
+            <h3>Invited Participant — Lorentz Workshop</h3>
+            <p>Engineering Reliable Autonomous Systems (by invitation), Leiden, The Netherlands.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <time class="mono">Sep 2023</time>
+          <div>
+            <h3>Invited Participant — Dagstuhl Seminar 23371</h3>
+            <p>Roadmap on Responsible Robots (by invitation), Schloss Dagstuhl, Germany.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <time class="mono">Aug 2023</time>
+          <div>
+            <h3>Visiting Researcher — University of Manchester</h3>
+            <p>Autonomy &amp; Verification Group, hosted by Prof. Michael Fisher, UK.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="service reveal">
+        <div class="service-block">
+          <span class="li-label">Programme committee</span>
+          <p>AAMAS 2026, PAAMS 2026, EMAS 2025, PAAMS 2025, EMAS 2024, PAAMS 2024, AAMAS 2023 (Blue Sky Ideas)</p>
+        </div>
+        <div class="service-block">
+          <span class="li-label">Reviewer</span>
+          <p>Artificial Intelligence Review (Springer).</p>
+        </div>
+        <div class="service-block">
+          <span class="li-label">Supervision</span>
+          <p>Supervisor of six Master's theses, KU Leuven (2021–2026).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-contact">
+      <div class="contact-card reveal">
+        <span class="section-index mono">05</span>
+        <h2>Get in touch</h2>
+        <p class="contact-lead">
+          Interested in formal verification of autonomous systems, or in bringing
+          rigour to LLM-based reasoning? My inbox is open.
+        </p>
+        <a href="mailto:yi.yang@kuleuven.be" class="contact-email">yi.yang@kuleuven.be</a>
+        <p class="contact-addr">DistriNet, Department of Computer Science, KU Leuven<br />Celestijnenlaan 200A, 3001 Leuven, Belgium</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="mono footer-formula" aria-hidden="true">AG ( curious → EF discovery )</p>
+    <p>© <span id="year"></span> Yi Yang — hand-built with plain HTML &amp; CSS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
